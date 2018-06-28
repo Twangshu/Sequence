@@ -114,4 +114,3 @@ int n=0,t=0,i,k,x,length=0,maxi=0;
        cout<<a[maxi][p];
        cout<<endl;
 }
-
