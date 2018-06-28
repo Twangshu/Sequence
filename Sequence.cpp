@@ -87,7 +87,7 @@ string Sequence::longestRepeated()
 int n=0,t=0,i,k,x,length=0,maxi=0;
     char s[1500000];
 	char str[256];
-	fstream outfile("D:\\dna.txt",ios::in);
+	fstream outfile(fname.c_str(),ios::in);
 	while(outfile.getline(str,256))
         for(i = 0; i < strlen(str); i++)
     {
