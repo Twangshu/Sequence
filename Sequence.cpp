@@ -68,7 +68,6 @@ string Sequence::longestConsecutive()
    }
 
 }
-cout<<"the longest part is :";
 for( int k=tem - max+1;k<=tem;k++)
     restring+=s[k];
     return restring;
@@ -112,7 +111,6 @@ int n=0,t=0,i,k,x,length=0,maxi=0;
             maxi=i;
         }
     }
-    cout<<"The longest repeat part is :";
     for(int p=0;p<length;p++)
        restring+=a[maxi][p];
     return restring;
