@@ -1,17 +1,13 @@
-#include<iostream>
+#include <iostream>
 #include "Sequence.h"
 
 int main()
 {
 
-    Sequence dna("/data/dna.txt");
-    dna.length();
-    dna.numberOf('A');
-    dna.numberOf('T');
-    dna.numberOf('C');
-    dna.numberOf('G');
-    dna.longestConsecutive();
-    dna.longestRepeated();
+    Sequence dna("D:\\dna.txt");
+    cout<<dna.length()<<endl;
+    cout<<dna.numberOf('A')<<endl;
+    cout<<dna.longestConsecutive()<<endl;
+    cout<<dna.longestRepeated()<<endl;
     return 0;
 }
-
