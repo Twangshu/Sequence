@@ -4,7 +4,7 @@
 int main()
 {
 
-    Sequence dna("D:\\dna.txt");
+    Sequence dna("dna.txt");
     cout<<dna.length()<<endl;
     cout<<dna.numberOf('A')<<endl;
     cout<<dna.longestConsecutive()<<endl;
