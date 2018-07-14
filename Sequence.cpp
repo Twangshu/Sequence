@@ -19,7 +19,7 @@ fstream outfile(fname.c_str(),ios::in);
   while(outfile.getline(str,256))
      for(int i = 0; i < strlen(str); i++)
         sum++;
-  cout<<"sum: "<<sum<<endl;
+  return sum;
 }
 
 int Sequence::numberOf(char base)
@@ -34,7 +34,7 @@ int Sequence::numberOf(char base)
             if(str[i] == base)
                 sum++;
     };
- cout<<base<<":"<<sum<<endl;
+  return sum;
 
 }
 string Sequence::longestConsecutive()
@@ -46,6 +46,7 @@ string Sequence::longestConsecutive()
 	j[0]=1;
 	int t=0;
 	char str[256];
+	string restring="";
 	fstream outfile(fname.c_str(),ios::in);
 	while(outfile.getline(str,256))
         for(int i = 0; i < strlen(str); i++)
@@ -69,9 +70,10 @@ string Sequence::longestConsecutive()
 }
 cout<<"the longest part is :";
 for( int k=tem - max+1;k<=tem;k++)
-     cout<<s[k];
-     cout<<endl;
+    restring+=s[k];
+    return restring;
      delete[]j;
+
 
 }
 int Sequence::comlen(char *p,char *q)
@@ -87,6 +89,7 @@ string Sequence::longestRepeated()
 int n=0,t=0,i,k,x,length=0,maxi=0;
     char s[1500000];
 	char str[256];
+	string restring ="";
 	fstream outfile(fname.c_str(),ios::in);
 	while(outfile.getline(str,256))
         for(i = 0; i < strlen(str); i++)
@@ -111,6 +114,6 @@ int n=0,t=0,i,k,x,length=0,maxi=0;
     }
     cout<<"The longest repeat part is :";
     for(int p=0;p<length;p++)
-       cout<<a[maxi][p];
-       cout<<endl;
+       restring+=a[maxi][p];
+    return restring;
 }
